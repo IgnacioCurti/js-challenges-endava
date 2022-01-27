@@ -21,6 +21,13 @@ function digitalClock(hours, minutes, seconds, hoursNY, hoursCA){
     
 }
 
+function analogClock(hours, minutes, seconds) {
+    const clock = document.querySelector(".analog-clock");
+    clock.style.setProperty("--hours-rotation", `${(360 / 12) * hours}deg`);
+    clock.style.setProperty("--minutes-rotation", `${(360 / 60) * minutes}deg`);
+    clock.style.setProperty("--seconds-rotation", `${(360 / 60) * seconds}deg`);
+}
+
 function time(){
 
     const start = new Date();
@@ -32,6 +39,7 @@ function time(){
     const hoursCA = format(hoursAux - 5 >= 0 ? hoursAux - 5  : 24 + hoursAux - 5 ); /* respectivamente, resto esos números a la hora Argentina 
                                                                                      y si el numero es negativo le sumo 24 */
     digitalClock(hours, minutes, seconds, hoursNY, hoursCA);
+    analogicClock(hours, minutes, seconds)
 
 }
 
