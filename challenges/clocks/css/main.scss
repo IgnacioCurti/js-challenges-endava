@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root{
+    --primaryColor: #8d00ce
+}
+
+body{
+    background: #000000;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar {
+    background: #aaaaaa;
+    padding: 1.3em;
+    
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--primaryColor);
+        font-size: 1.2em;
+
+        span{
+            color: #111111;
+        }
+    }
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.digital-clock{
+    background: #f2f2f2;
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: .6em 1.3em;
+}
+
+.digital-clockNY{
+    background: #d3d3d3;
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: .6em 1.3em;
+}
+
+.digital-clockCA{
+    background: #a7a7a7;
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: .6em 1.3em;
+}
