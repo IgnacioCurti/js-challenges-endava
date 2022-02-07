@@ -6,9 +6,9 @@ function digitalClock(timeAR, timeNY, timeLA){
     const h2NY = document.querySelector(".digital-clockNY h2")
     const h2CA = document.querySelector(".digital-clockCA h2")
     h1.textContent = timeAR.substring(0, 8);
-    h2.textContent = "Argentina"
     h1NY.textContent = timeNY.substring(0, 8);
     h1CA.textContent = timeLA.substring(0, 8);
+    h2.textContent = "Argentina"
     h2NY.textContent = "New York"
     h2CA.textContent = "California"
 }
