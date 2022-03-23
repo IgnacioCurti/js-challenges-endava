@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Challenge</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Rock Paper Scissors Lizard Spock</a>
+        </div>
+    </div>
+
+    <div class= "alert">
+        <div class="alertWindow">
+            <div class="alertTitleBar">
+                <span class="alertTitle"></span>
+                <button onclick="document.querySelector('.alert').style.visibility = 'hidden'" class="alertClose material-icons" >close</button>
+            </div>
+            <div class="alertContent"></div>
+        </div>
+    </div>
+
+    <ul class="buttons">
+        <li> <img src="/img/rock.jpg" alt="Rock icon" onclick="rock()" style="height: 100px; width: 100px; margin: 1pc"> </li>
+        <li> <img src="/img/paper.jpg" alt="Paper icon" onclick="paper()" style="height: 100px; width: 100px; margin: 1pc"> </li>
+        <li> <img src="/img/scissors.jpg" alt="Scissors icon" onclick="scissors()" style="height: 100px; width: 100px; margin: 1pc"> </li>
+        <li> <img src="/img/lizard.jpg" alt="Lizard icon" onclick="lizard()" style="height: 100px; width: 100px; margin: 1pc"> </li>
+        <li> <img src="/img/spock.jpg" alt="Spock icon" onclick="spock()" style="height: 100px; width: 100px; margin: 1pc"> </li>
+    </ul>
+
+    <div class="score">
+        <h3>
+            Click any button to play 
+        </h3> 
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
