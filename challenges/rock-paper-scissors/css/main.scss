@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root{
+    --primaryColor: #8d00ce
+}
+
+body{
+    background: #FFFFFF;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar {
+    background: #cccccc;
+    padding: 1.3em;
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #9517cf;
+        font-size: 1.8em;
+    }
+}
+
+.alert{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #cccccc50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.alertWindow{
+    max-width: 500px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 16px;
+    box-shadow: 0 0 15px, #00000025;
+}
+
+.alertTitleBar{
+    height: 40px;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alertTitle{
+    margin-left: 15px;
+    font-weight: bold;
+    color: #b14fdf;
+}
+
+.alertClose{
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #b14fdf;
+    cursor: pointer;
+}
+
+.alertClose:active{
+    transform: scale(0.8);
+}
+
+.alertContent{
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5pc;
+    list-style-type: none;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
